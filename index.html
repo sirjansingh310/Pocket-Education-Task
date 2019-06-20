@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"/>
+    <title>Pocket Education Task</title>
+</head>
+<body>
+    <div class = "header">
+        <h2><a href = "index.html">Pocket Education</a></h2>
+        <button><a href = "add-block.html">Add New Block</a></button>
+    </div>
+
+    <div class = "search">
+        <h4>Dashboard</h4>
+        <input type="text" id = "search" placeholder="Search" onkeyup="searchTable()"/>
+    </div>
+    <table cellspacing="0" cellpadding="0">
+        <thead>
+            <th>ID</th>
+            <th>NAME</th>
+            <th>AGE</th>
+            <th class="table-buttons"></th>
+        </thead>
+        <tbody>
+            <!-- rendered dynamically -->
+        </tbody>
+    </table>
+    <script type="text/javascript" src = "script.js"></script>
+</body>
+</html>

@@ -1,0 +1,130 @@
+body{
+    margin: 0;
+    padding: 0%;
+    font-family: 'Roboto', sans-serif;
+}
+.header{
+    display: block;
+    height: 75px;
+    background-color:#404959;
+}
+.header h2{
+    float: left;
+    font-size: 30px;
+    width: 25%;
+    color: #ffffff;
+    margin-left: 90px;
+    margin-top: 20px;
+    }
+.header button{
+    float: right;
+    width: 25%;
+    width: 120px;
+    height: 35px;
+    margin-right: 100px;
+    margin-top: 20px;
+    background-color: #fff;
+    border-radius: 15px ;
+    outline: none;
+}
+.search{
+    margin: 7px;
+    display: block;
+    height: 50px;
+}
+.search h4{
+    float: left;
+    width: 33%;
+    font-size: 25px;
+    margin-left: 80px;
+}
+
+.search input{
+    float: right;
+    margin-top: 40px;
+    margin-right: 90px;
+    width: 200px;
+    border-radius: 15px;
+    padding: 7px;
+    outline: none;
+    border: 0.5px solid #000;
+}
+.search input::placeholder{
+    color: #000;
+}
+
+table{
+    width: 88%;
+    display: block;
+    border: 1px solid black;
+    margin: auto;
+    margin-top: 50px;
+}
+
+table th, td{
+    width: 120px;
+    height: 50px;
+    border: 0.1px solid #444649;
+    text-align: center;
+    font-weight: bold;
+}
+
+table thead th{
+    background: gray;
+}
+.table-buttons{
+    width: 850px;
+    text-align: right;
+}
+
+#edit, #delete{
+    border: none;
+    background: #fff;
+    outline: none;
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+#delete{
+    margin-right: 50px;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.new-block{
+    width: 70%;
+    margin: auto;
+    margin-left: 250px;
+    box-shadow:  4px 8px  rgba(0,0,0,0.2);
+    border-radius: 15px;
+    transition: 0.3s;
+    padding: 30px;
+}
+
+.new-block input{
+    border-radius: 15px;
+    height: 40px;
+    width: 200px;
+    margin-bottom: 30px;
+    outline: none;
+}
+
+#save{
+    margin-left: 300px;
+    height: 40px;
+    width: 150px;
+    background-color: #4386f2;
+    color: white;
+    font-style: italic;
+    margin-top: 25px;
+    border-radius: 15px;
+}
+
+span{
+    display: inline-block;
+    font-style: italic;
+    font-weight: bold;
+    width: 150px;
+}
