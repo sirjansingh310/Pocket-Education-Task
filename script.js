@@ -1,10 +1,10 @@
-var data = sessionStorage.data;
+var data = localStorage.data;
 if(data == null){
-    sessionStorage.setItem("data",JSON.stringify([]));
+    localStorage.setItem("data",JSON.stringify([]));
 }
 window.onload = function(e){
     let tBody = document.getElementsByTagName("tbody")[0];
-    let storedArray = JSON.parse(sessionStorage.getItem("data"));
+    let storedArray = JSON.parse(localStorage.getItem("data"));
     for(let i = 0; i < storedArray.length; i++){
         let row = document.createElement("tr");
         for(let j = 0; j < storedArray[i].length; j++){
@@ -35,9 +35,9 @@ saveItem = () => {
     row[0] = id;
     row[1] = name;
     row[2] = age;
-    var storedArray = JSON.parse(sessionStorage.getItem("data"));
+    var storedArray = JSON.parse(localStorage.getItem("data"));
     storedArray.push(row);
-    sessionStorage.setItem("data",JSON.stringify(storedArray));
+    localStorage.setItem("data",JSON.stringify(storedArray));
 }
 
 searchTable = () => {
